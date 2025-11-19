@@ -1,6 +1,38 @@
+html {
+    height: 100%;
+}
 body {
     background-color: white;
     display: grid;
     height: 100%;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    width: 121px;
+    height: 52px;
+}
+body .quick-contact {
+    background: #304068;
+    height: 50px;
+}
+body header {
+    justify-content: space-between;
+    display: grid;
+    grid-template-areas:
+        "logo       search-panel"
+        "category category category category";
+
+}
+.search-panel {
+    color: gray;
+    background: aqua;
+}
+
+body footer {
+    background: red;
 }
