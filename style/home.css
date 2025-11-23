@@ -1,0 +1,39 @@
+hero {
+    display: flex;
+    justify-content: center;
+}
+.hero-img {
+    width: 100%;
+}
+
+.categories-second {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category-second {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.category-second img {
+    width: 100%;
+    height: auto;
+}
+
+/* The actual text */
+.category-second .title {
+    position: absolute;
+    transform: translate(20px, 20px);
+    font-size: var(--font-size-bigger);
+    color: var(--color-accent-primary);
+}
+.category-second:hover .title {
+    color: var(--color-accent-secondary);
+    text-decoration: underline;
+    transition: 0.5s;
+}

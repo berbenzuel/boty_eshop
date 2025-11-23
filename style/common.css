@@ -1,0 +1,150 @@
+:root {
+    --color-base: white;
+    --color-accent-primary: #304068;
+    --color-accent-secondary: #c7232f;
+    --color-accent-terciary: #b4bed5;
+
+    --font-family-primary: "Roboto", sans-serif;
+    --font-size-base: 20px;
+    --font-size-bigger: 28px;
+}
+
+body,
+body * {
+    font-family: var(--font-family-primary);
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+}
+
+body {
+    background-color: var(--color-base);
+    display: grid;
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-base);
+}
+.logo {
+    height: 70px;
+}
+body header {
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-accent-primary);
+    color: var(--color-base);
+    height: 60px;
+}
+
+.quick-contact {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+header * {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    height: 30px;
+}
+
+.menu {
+    margin: 20px 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+main .image-and-search {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.search-panel {
+    color: var(--color-accent-terciary);
+}
+.search {
+    color: var(--color-accent-terciary);
+    height: 40px;
+    width: 250px;
+    border: 1px solid var(--color-accent-terciary);
+    background: url("../src/img/loupe.svg") no-repeat 5px center / 20px;
+    padding-left: 30px;
+}
+.search::placeholder {
+    color: var(--color-accent-terciary);
+    font-family: var(--font-family-primary);
+    font-size: var(--font-size-base);
+}
+
+.category {
+    background-color: transparent;
+    color: var(--color-accent-terciary);
+    flex: 1;
+    height: 80px;
+    min-width: 200px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    outline: solid var(--color-accent-terciary) 2px;
+    position: relative;
+    z-index: 1;
+}
+.category img {
+    height: 25px;
+}
+.category:hover {
+    outline-color: var(--color-accent-secondary);
+    color: var(--color-accent-secondary);
+    font-weight: bold;
+    z-index: 999;
+    transition: 0.5s;
+}
+.category:hover img {
+    animation: jump 0.5s ease;
+}
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.categories {
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row;
+    gap: 2px;
+}
+
+body main,
+body header,
+body footer {
+    padding: 0 150px;
+}
+
+body main {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+}
+
+body footer {
+    background: red;
+}
+
+/*properties*/

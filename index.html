@@ -1,31 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="common.css">
-</head>
-<body>
-<div class="quick-contact">
-    <a href="tel:+420777666555">+420 777 666 555</a>
-    |
-    <a href="mailto:info@nejlepsiboty.cz"> info@nejlepsiboty.cz</a>
-</div>
-<header>
-    <img src="src/img/Group 4.png" alt="logo" class="logo">
-    <div class="search-panel">
-        search
-    </div>
-    <div class="category boy">
-        boy
-    </div>
-</header>
-<main>
-    main
-</main>
-<footer>
-    footer
-</footer>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
 
-</body>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="style/common.css" />
+        <link rel="stylesheet" href="style/home.css" />
+    </head>
+    <body>
+        <header>
+            <div class="quick-contact">
+                <a href="tel:+420777666555">
+                    <img src="src/img/8.svg" />
+                    +420 777 666 555
+                </a>
+                |
+                <a href="mailto:info@nejlepsiboty.cz"> info@nejlepsiboty.cz</a>
+            </div>
+            <a href="#">
+                <img src="src/img/profile-user.svg" />
+                prihlasit se
+            </a>
+        </header>
+        <main>
+            <div class="menu">
+                <img src="src/img/Group 4.svg" alt="logo" class="logo" />
+                <div class="search-panel">
+                    <input
+                        type="search"
+                        name="search"
+                        class="search"
+                        placeholder="Vyhledat zboží..."
+                    />
+                </div>
+                <div class="categories">
+                    <a class="category" href="#">
+                        Chlapecké
+                        <img src="src/img/Group 169.svg" />
+                    </a>
+                    <a class="category" href="#">
+                        Dívčí
+                        <img src="src/img/Group 171.svg" />
+                    </a>
+                    <a class="category" href="#">Doplňky</a>
+                    <a class="category" href="#">Ostatní</a>
+                    <a class="category" href="#">Kontakt</a>
+                </div>
+            </div>
+            <hero>
+                <img src="src/img/hero-full.png" alt="hero" class="hero-img" />
+            </hero>
+
+            <div class="categories-second">
+                <a class="category-second" id="boy-category" href="#">
+                    <span class="title"
+                        >KLUČIČÍ<br />
+                        BOTY</span
+                    >
+                    <img src="src/img/01.png" />
+                </a>
+                <a class="category-second" id="girl-category" href="#">
+                    <span class="title">DÍVČÍ BOTY</span>
+                    <img src="src/img/02.png" />
+                </a>
+                <a class="category-second" id="how-category" href="#">
+                    <span class="title"
+                        >JAK SPRÁVNĚ<br />
+                        VYBRAT?</span
+                    >
+                    <img src="src/img/03-01.png" />
+                </a>
+            </div>
+        </main>
+        <footer>footer</footer>
+    </body>
 </html>
