@@ -5,7 +5,7 @@
     --color-accent-terciary: #b4bed5;
 
     --font-family-primary: "Roboto", sans-serif;
-    --font-size-base: 20px;
+    --font-size-base: 25px;
     --font-size-bigger: 28px;
 }
 
@@ -146,8 +146,5 @@ body footer {
     background: red;
 }
 
-
-
 @media screen {
-
 }

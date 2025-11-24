@@ -9,14 +9,12 @@ hero {
 .categories-second {
     display: flex;
     flex-flow: row;
-    gap: 20px
+    gap: 20px;
 }
 
 .category-second {
     flex: 1 1 calc(33.3333% - 20px);
-    font-size: 20%;
     position: relative;
-    container: category-second / inline-size;
 }
 
 .category-second img {
@@ -25,11 +23,15 @@ hero {
     display: block;
 }
 
-/* The actual text */
 .category-second .title {
     position: absolute;
+    font-size: 3cqh;
+    text-wrap: nowrap;
+    container: category-second / inline-size;
+    padding: 0;
     top: 50%;
-    transform: translate(20%, -10%);
+    left: 5%;
+    transform: translateY(-40%);
     color: var(--color-accent-primary);
 }
 .category-second:hover .title {
@@ -37,19 +39,3 @@ hero {
     text-decoration: underline;
     transition: 0.3s;
 }
-.boot div {
-    display: flex;
-    flex-flow: row;
-    gap: 40px;
-}
-.new-price {
-    color: var(--color-accent-secondary);
-    font-weight: bold;
-}
-.old-price {
-    color: var(--color-accent-terciary);
-    text-decoration: line-through;
-}
-
-
-
