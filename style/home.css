@@ -25,9 +25,10 @@ hero {
 
 .category-second .title {
     position: absolute;
-    font-size: 3cqh;
+
     text-wrap: nowrap;
     container: category-second / inline-size;
+    font-size: 3cqh;
     padding: 0;
     top: 50%;
     left: 5%;

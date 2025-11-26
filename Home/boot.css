@@ -16,6 +16,7 @@
 .order {
     width: 40px;
     height: auto;
+    visibility: hidden;
 }
 
 .boot .prices {
@@ -23,21 +24,24 @@
     flex-flow: row;
     gap: 40px;
 }
-.boot > div {
+.description {
     padding-left: 20px;
     padding-right: 20px;
+}
+.description > div{
+
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
 }
 .boot-description {
-    padding-left: 20px;
-    font-size: 2.5cqh;
+    font-size: var(--font-size-base);
+    color: var(--color-accent-primary);
 }
 
 .prices span {
-    font-size: 3cqh;
+    font-size: 30px;
 }
 
 .new-price {
@@ -47,4 +51,13 @@
 .old-price {
     color: var(--color-accent-terciary);
     text-decoration: line-through;
+}
+
+
+.boot:hover {
+    outline-color: var(--color-accent-secondary);
+    transition: 0.3s;
+}
+.boot:hover .order {
+    visibility: visible;
 }
