@@ -1,0 +1,26 @@
+hero {
+    display: flex;
+    justify-content: center;
+}
+.hero-img {
+    width: 100%;
+}
+
+#supply {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 100px;
+}
+
+#show-whole-supply-button {
+    background-color: var(--color-accent-secondary);
+    color: var(--color-base);
+    font-size: var(--font-size-base);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 70px;
+}

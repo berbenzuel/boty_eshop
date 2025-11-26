@@ -1,40 +1,20 @@
-:root {
-    --color-base: white;
-    --color-accent-primary: #304068;
-    --color-accent-secondary: #c7232f;
-    --color-accent-terciary: #b4bed5;
-
-    --font-family-primary: "Roboto", sans-serif;
-    --font-size-base: 25px;
-    --font-size-bigger: 28px;
-}
-
-body,
-body * {
-    font-family: var(--font-family-primary);
-    font-size: var(--font-size-base);
-}
-
-body {
-    background-color: var(--color-base);
-    display: grid;
-    height: 100%;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: var(--color-base);
-}
 .logo {
     height: 70px;
 }
 body header {
     display: flex;
-    justify-content: space-between;
+    flex-flow: column;
+}
+
+#raw-header {
+    display: flex;
+
     background: var(--color-accent-primary);
     color: var(--color-base);
     height: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
+    justify-content: space-between;
 }
 
 .quick-contact {
@@ -61,8 +41,9 @@ header img {
     flex-wrap: wrap;
     gap: 20px;
     align-items: center;
+    padding: 0 150px;
 }
-main .image-and-search {
+.image-and-search {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
@@ -128,23 +109,4 @@ main .image-and-search {
     display: flex;
     flex-flow: row;
     gap: 2px;
-}
-
-body main,
-body header,
-body footer {
-    padding: 0 150px;
-}
-
-body main {
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-}
-
-body footer {
-    background: red;
-}
-
-@media screen {
 }
