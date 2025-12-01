@@ -1,13 +1,5 @@
-.supply-boots {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-}
 .boot {
     outline: var(--color-accent-terciary) solid 2px;
-    min-width: 350px;
     flex: 1;
 }
 
@@ -40,7 +32,7 @@
     align-items: center;
 }
 .boot-description {
-    font-size: 30px;
+    font-size: var(--font-size-base);
     color: var(--color-accent-primary);
 }
 
@@ -63,4 +55,41 @@
 }
 .boot:hover .order {
     visibility: visible;
+}
+
+@media screen and (width < 1200px) {
+    .boot {
+        width: 100%;
+    }
+
+    .boot img {
+        width: 100%;
+    }
+    .order {
+        width: 40px;
+        height: auto;
+        visibility: hidden;
+    }
+
+    .boot .prices {
+        display: flex;
+        flex-flow: row;
+        gap: 20px;
+    }
+    .description {
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+    .boot-description {
+        font-size: 60px;
+    }
+
+    .prices span {
+        font-size: 60px;
+    }
+    .boot:hover .order {
+        visibility: visible;
+    }
 }

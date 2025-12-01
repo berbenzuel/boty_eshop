@@ -1,0 +1,176 @@
+.info-panel {
+    display: grid;
+    grid-template: ".about .our-menu .contacts" 100% / 1fr 1fr 1fr;
+    font-size: 20px;
+    color: var(--color-base);
+    width: 100%;
+}
+.info-panel > div {
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+}
+.info-panel .about {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding-left: 150px;
+    padding-right: 150px;
+
+    background-color: var(--color-accent-secondary);
+}
+.info-panel .about p {
+    margin: 0;
+    hyphens: auto;
+    word-wrap: break-word;
+    text-wrap-mode: wrap;
+    text-wrap-style: pretty;
+    text-align: justify;
+    text-align-last: justify;
+    text-justify: inter-word;
+}
+
+.info-panel .logo {
+    height: 70px;
+    filter: brightness(0) invert(1);
+}
+
+.info-panel .our-menu {
+    background-color: var(--color-accent-secondary);
+    padding-left: 70px;
+}
+
+.info-panel .our-menu > div {
+    display: flex;
+    flex-flow: row;
+    gap: 80px;
+}
+
+.our-menu-category ul {
+    list-style-type: circle;
+}
+
+.info-panel .contacts {
+    padding-right: 150px;
+    background-color: var(--color-accent-primary);
+    padding-left: 40px;
+}
+
+.info-panel .contacts-a {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+.info-panel .contacts-a > a {
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.info-panel .contacts-a > a img {
+    height: 25px;
+}
+
+.info-panel .contacts-a > a #mobile {
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.info-panel .socials {
+    display: flex;
+    flex-flow: row;
+    gap: 20px;
+}
+
+.info-panel .socials img {
+    height: 35px;
+}
+
+.info-panel .contacts .address {
+    margin-top: 40px;
+}
+
+@media screen and (width < 1200px) {
+    .info-panel {
+        display: flex;
+        flex-flow: column;
+        justify-content: left;
+        font-size: 40px;
+    }
+    .info-panel .contacts-a {
+        gap: 40px;
+    }
+    .info-panel > div {
+        padding-top: 100px;
+        padding-bottom: 50px;
+
+        display: flex;
+        flex-flow: column;
+        gap: 80px;
+    }
+    .info-panel .about {
+        padding-left: 30px;
+        padding-right: 150px;
+    }
+
+    .info-panel .logo {
+        height: 100px;
+    }
+
+    .info-panel .our-menu {
+        background-color: var(--color-accent-secondary);
+        padding-left: 30px;
+    }
+
+    .info-panel .our-menu > div {
+        gap: 250px;
+    }
+    .info-panel li {
+        margin: 20px;
+    }
+
+    .info-panel .contacts {
+        padding-right: 150px;
+        background-color: var(--color-accent-primary);
+        padding-left: 30px;
+        /*gap: 40px;*/
+        padding-bottom: 100px;
+    }
+
+    .info-panel .contacts-a > a {
+        display: flex;
+        flex-flow: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .info-panel .contacts-a > a img {
+        height: 40px;
+    }
+
+    .info-panel .contacts-a > a #mobile {
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .info-panel .socials > div {
+        display: flex;
+        flex-flow: row;
+        gap: 30px;
+    }
+
+    .info-panel .socials img {
+        height: 60px;
+    }
+
+    .info-panel .contacts .address {
+        margin-top: 40px;
+    }
+}

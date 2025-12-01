@@ -1,0 +1,98 @@
+.subscription {
+    width: 100%;
+    height: auto;
+    padding: 50px 0 100px 0;
+
+    background-image: url("../src/img/subscription-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.subscription {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.subscription > div {
+    display: flex;
+    width: 500px;
+    flex-flow: row;
+    margin-top: 40px;
+}
+
+.subscription > div input {
+    width: 100%;
+    color: var(--color-accent-terciary);
+    border: 1px solid var(--color-accent-terciary);
+    background: url("../src/img/letter.png") no-repeat 10px center / 40px;
+    background-color: var(--color-base);
+    padding-left: 60px;
+    font-size: var(--font-size-base);
+}
+
+.subscription > div input::placeholder {
+    color: var(--color-accent-terciary);
+}
+
+.subscription > div a {
+    background-color: var(--color-accent-secondary);
+    text-wrap-mode: nowrap;
+    padding: 20px;
+    font-size: var(--font-size-base);
+}
+.subscription h1 {
+    font-size: 40px;
+    margin: 10px;
+}
+.subscription span {
+    font-size: var(--font-size-base);
+}
+
+@media screen and (width < 1200px) {
+    .subscription {
+        padding: 100px 0px 150px 0px;
+        gap: 20px;
+    }
+
+    .subscription > div {
+        display: flex;
+        width: fit-content;
+        padding-left: 30px;
+        padding-right: 30px;
+        flex-flow: row;
+        margin-top: 40px;
+    }
+
+    .subscription > div input {
+        width: 100%;
+
+        border: 1px solid var(--color-accent-terciary);
+        background: url("../src/img/letter.png") no-repeat 10px center / 40px;
+        background-color: var(--color-base);
+        padding-left: 60px;
+        font-size: var(--font-size-base);
+    }
+
+    .subscription > div input::placeholder {
+        color: var(--color-accent-terciary);
+    }
+
+    .subscription > div a {
+        background-color: var(--color-accent-secondary);
+        text-wrap-mode: nowrap;
+        padding: 30px 70px;
+        font-size: var(--font-size-base);
+    }
+    .subscription h1 {
+        font-size: 90px;
+        text-align: center;
+        margin: 10px;
+    }
+    .subscription span {
+        font-size: 60px;
+        text-align: center;
+    }
+}

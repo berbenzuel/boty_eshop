@@ -1,0 +1,69 @@
+hero {
+    position: relative;
+}
+
+hero img {
+    width: 100%;
+    height: auto;
+    min-width: 1800px;
+}
+
+hero #hero-text {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(10%, -50%);
+}
+
+hero h1 {
+    font-size: 90px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    color: var(--color-accent-primary);
+}
+
+hero h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--color-accent-secondary);
+}
+
+hero a {
+    font-size: var(--font-size-base);
+    text-align: center;
+    padding: 15px;
+    width: 250px;
+    background-color: var(--color-accent-secondary);
+    margin-top: 30px;
+}
+
+hero #hero-circles {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    display: flex;
+    flex-flow: row;
+    transform: translateX(-50%);
+    gap: 20px;
+}
+hero .circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: var(--color-base);
+}
+
+hero #filled {
+    background-color: var(--color-accent-primary);
+}
+
+@media screen and (width < 1200px) {
+    hero {
+        display: none;
+    }
+}

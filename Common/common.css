@@ -12,7 +12,6 @@
 body,
 body * {
     font-family: var(--font-family-primary);
-    font-size: var(--font-size-base);
 }
 
 body {
@@ -27,9 +26,9 @@ a {
     color: var(--color-base);
 }
 
-body main,
-body footer {
+body main {
     padding: 0 150px;
+    gap: 30px;
 }
 
 body main {
@@ -38,8 +37,63 @@ body main {
     align-content: center;
 }
 
-#separator {
+.separator {
+    position: relative;
+    height: 80px;
 }
 
-@media screen {
+.separator hr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 1px;
+    margin-top: 40px;
+}
+
+.separator img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    padding: 10px;
+    background-color: var(--color-base);
+}
+
+@media screen and (width < 1200px) {
+    :root {
+        --color-base: white;
+        --color-accent-primary: #304068;
+        --color-accent-secondary: #c7232f;
+        --color-accent-terciary: #b4bed5;
+
+        --font-family-primary: "Roboto", sans-serif;
+        --font-size-base: 45px;
+        --font-size-bigger: 100px;
+    }
+
+    body,
+    body * {
+        font-family: var(--font-family-primary);
+    }
+
+    body main {
+        padding: 0;
+    }
+
+    .separator {
+        position: relative;
+        height: 80px;
+    }
+
+    .separator hr {
+        border-width: 3px;
+        margin-top: 40px;
+    }
+
+    .separator img {
+        width: 100px;
+        padding: 10px;
+        background-color: var(--color-base);
+    }
 }
