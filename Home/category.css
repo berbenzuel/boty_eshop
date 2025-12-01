@@ -8,7 +8,7 @@
 .category-second {
     flex: 1 1 calc(33.3333% - 20px);
     position: relative;
-    min-width: 420px;
+    /*min-width: 420px;*/
 }
 
 .category-second img {
@@ -51,10 +51,9 @@
 
     .category-second .title {
         position: absolute;
-
         text-wrap: nowrap;
         container: category-second / inline-size;
-        font-size: 3cqh;
+        font-size: 5cqh;
         padding: 0;
         top: 50%;
         left: 5%;

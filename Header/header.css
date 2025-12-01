@@ -132,17 +132,19 @@ header * {
     }
     #raw-header img {
         height: 70px;
+        width: auto;
     }
     .search-panel img {
         height: 90px;
     }
 
     .logo {
-        height: 150px;
+        height: 20%;
     }
 
     #raw-header {
-        font-size: var(--font-size-base);
+        container: category-second / inline-size;
+        font-size: 4cqh;
         height: 150px;
         padding-left: 30px;
         padding-right: 30px;

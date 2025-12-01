@@ -1,9 +1,8 @@
 .supply-boots {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    flex-wrap: wrap;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 20px;
-    justify-content: space-between;
 }
 
 h1 .normal,
@@ -24,7 +23,7 @@ h1 .weighted {
         flex-flow: column;
         gap: 50px;
         justify-content: space-between;
-        padding: 0 100px;
+        align-items: center;
     }
 
     h1 .normal,
@@ -32,7 +31,8 @@ h1 .weighted {
         display: flex;
         flex-flow: column;
         align-items: center;
-        font-size: 100px;
+        font-size: 20cqw;
+        text-align: center;
     }
     h1 .normal {
         color: var(--color-accent-secondary);

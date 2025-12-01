@@ -59,7 +59,7 @@
 
 @media screen and (width < 1200px) {
     .boot {
-        width: 100%;
+        width: 70%;
     }
 
     .boot img {

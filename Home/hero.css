@@ -5,20 +5,22 @@ hero {
 hero img {
     width: 100%;
     height: auto;
-    min-width: 1800px;
+    /*min-width: 1800px;*/
 }
 
 hero #hero-text {
     position: absolute;
     display: flex;
     flex-flow: column;
+    text-wrap: nowrap;
     top: 50%;
     left: 50%;
     transform: translate(10%, -50%);
 }
 
 hero h1 {
-    font-size: 90px;
+    container: category-second / inline-size;
+    font-size: 8cqh;
     margin: 0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -28,16 +30,18 @@ hero h1 {
 
 hero h2 {
     margin: 0;
-    font-size: 40px;
+    container: category-second / inline-size;
+    font-size: 5cqh;
     font-weight: 400;
     color: var(--color-accent-secondary);
 }
 
 hero a {
-    font-size: var(--font-size-base);
+    container: category-second / inline-size;
+    font-size: 2cqh;
     text-align: center;
     padding: 15px;
-    width: 250px;
+    width: 10cqw;
     background-color: var(--color-accent-secondary);
     margin-top: 30px;
 }
@@ -52,9 +56,10 @@ hero #hero-circles {
     gap: 20px;
 }
 hero .circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 30px;
+    container: category-second / inline-size;
+    width: 2cqh;
+    height: 2cqh;
+    border-radius: 2cqh;
     background-color: var(--color-base);
 }
 
